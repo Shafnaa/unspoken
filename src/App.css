@@ -34,10 +34,12 @@
   margin-top: 12px;
   justify-content: center;
   align-items: center;
+  border: 0px;
+  font-family: pinkypromise, sans-serif;
 }
 
 .kartu-konten {
-  height: 240px;
+  height: 280px;
   width: 240px;
   display: flex;
   flex-direction: column;
@@ -47,16 +49,16 @@
 }
 
 .kartu-konten-for {
-  align-self: flex-start;
+  font-size: 20px;
 }
 
 .kartu-konten-message {
-  align-self: flex-start;
+  font-size: 20px;
 }
 
 .kartu-konten-from {
   align-self: flex-end;
-  padding-right: 8px;
+  font-size: 20px;
 }
 
 @keyframes App-logo-spin {

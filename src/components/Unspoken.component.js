@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-import paper from "../media/toppng.com-6-scrap-of-paper-351x451.png";
+import scrapPaper from "../media/scrap-paper.svg";
 
 const Card = (props) => {
   const parts = typeof props.unspoken.username === "string" ? props.unspoken.username.split(" ") : "";
@@ -18,11 +18,11 @@ const Card = (props) => {
   }
   return (
     <div className="card kartu">
-      <img height="100%" width="100%" className="position-absolute" src={paper} alt="scrap paper" />
+      <img height="100%" width="100%" className="position-absolute" src={scrapPaper} alt="scrap paper" />
       <div className="kartu-konten">
-        <p className="kartu-konten-for">For: {props.unspoken.to}</p>
+        <p className="kartu-konten-for">To {props.unspoken.to}</p>
         <p className="kartu-konten-message">"{props.unspoken.message}"</p>
-        <p className="kartu-konten-from">From: {initials}</p>
+        <p className="kartu-konten-from">-{initials}</p>
       </div>
     </div>
   );
