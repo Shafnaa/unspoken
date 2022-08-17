@@ -6,6 +6,7 @@ import "./App.css";
 import Navbar from "./components/Navbar.component";
 import Unspoken from "./components/Unspoken.component";
 import Submit from "./components/Submit.component";
+import Footer from "./components/Footer.component";
 
 function App() {
   return (
@@ -13,12 +14,15 @@ function App() {
       <React.Fragment>
         <Navbar />
       </React.Fragment>
-      <div className="container">
+      <div className="container main-container">
         <Routes>
           <Route path="/" exact element={<Unspoken />} />
           <Route path="/submit" element={<Submit />} />
         </Routes>
       </div>
+      <React.Fragment>
+        <Footer />
+      </React.Fragment>
     </BrowserRouter>
   );
 }
